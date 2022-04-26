@@ -8,7 +8,9 @@ export const ToDoList = () => {
 	return (
 		<>
 			<input
+				className="inputT"
 				type="text"
+				placeholder="Press 'Enter' to add a Task"
 				onChange={(e) => setInputValue(e.target.value)}
 				onKeyPress={(e) => {
 					if (e.key == "Enter") {

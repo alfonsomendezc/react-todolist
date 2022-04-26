@@ -4,7 +4,10 @@ import { ToDoList } from "./ToDoList.jsx";
 const Home = () => {
 	return (
 		<>
-			<ToDoList />
+			<div className="title">TO-DO LIST</div>
+			<div className="container-fluid">
+				<ToDoList />
+			</div>
 		</>
 	);
 };

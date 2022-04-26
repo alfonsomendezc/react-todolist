@@ -4,9 +4,11 @@ import PropTypes from "prop-types";
 export const Task = (props) => {
 	return (
 		<>
-			<p onClick={() => props.removeTask(props.position)}>
+			<div
+				className="tasks"
+				onClick={() => props.removeTask(props.position)}>
 				{props.newTask}
-			</p>
+			</div>
 		</>
 	);
 };
