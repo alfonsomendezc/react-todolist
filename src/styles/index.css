@@ -4,29 +4,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.container-fluid {
-    background-color: rgb(167, 191, 243);
-    margin: auto;
-    margin-top: 20px;
-    width: 600px;
-    min-height: 250px;
-    text-align: center;
-    border-radius: 10px;
-}
-
-.tasks {
-    height: 70px;
-    font-size: 40px;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.inputT {
-    width: 300px;
-    height: 50px;
-    margin-top: 20px;    
-}
-
 .title {
     width: 400px;
     text-align: center;
@@ -35,4 +12,53 @@ body {
     font-size:  60px;
     background-color: rgb(201, 201, 201);
     border-radius: 30px;
+    border: solid black;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.555);
+}
+
+.container-fluid {
+    background-color: rgb(217, 227, 250);
+    margin: auto;
+    margin-top: 20px;
+    width: 600px;
+    min-height: 250px;
+    text-align: center;
+    border-radius: 10px;
+    border: solid black;
+    box-shadow: 20px 20px 10px rgba(0, 0, 0, 0.555);
+}
+
+.inputT {
+    width: 300px;
+    height: 50px;
+    margin: 20px 0px 20px 0px;    
+}
+
+.tasks {
+    height: 70px;
+    font-size: 40px;
+    padding-left: 15px;
+    text-align: left;
+    border-bottom: solid 1px rgb(128, 124, 124);
+}
+
+.tasksNumber {
+    padding: 10px;
+    margin: 5px;
+}
+
+i {
+    float: right;
+    padding: 20px;
+    font-size: 20px;
+}
+.tasks:hover .fa-solid{
+    visibility: visible;
+}
+
+.fa-solid {
+    visibility: hidden;
+}
+.fa-solid:hover {
+    color: red;
 }

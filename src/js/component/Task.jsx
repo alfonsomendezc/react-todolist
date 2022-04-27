@@ -4,10 +4,11 @@ import PropTypes from "prop-types";
 export const Task = (props) => {
 	return (
 		<>
-			<div
-				className="tasks"
-				onClick={() => props.removeTask(props.position)}>
-				{props.newTask}
+			<div className="tasks">
+				- {props.newTask}
+				<i
+					className="fa-solid fa-square-xmark"
+					onClick={() => props.removeTask(props.position)}></i>
 			</div>
 		</>
 	);

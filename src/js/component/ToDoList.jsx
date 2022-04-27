@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Task } from "./task.jsx";
+import { Task } from "./Task.jsx";
+import { TaskNumber } from "./TasksNumber.jsx";
 
 export const ToDoList = () => {
 	const [inputValue, setInputValue] = useState("");
@@ -37,6 +38,11 @@ export const ToDoList = () => {
 					);
 				})}
 			</div>
+			{tasks.length == 0 ? (
+				"Good job! No tasks left!"
+			) : (
+				<TaskNumber tasksNumber={tasks.length} />
+			)}
 		</>
 	);
 };
